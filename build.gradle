@@ -1,0 +1,20 @@
+group 'com.intercom.customersorter'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin:'application'
+mainClassName = "com.intercom.customersorter.Application"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.7'
+
+    testCompile 'junit:junit:4.12',
+            'org.assertj:assertj-core:3.8.0'
+
+}
